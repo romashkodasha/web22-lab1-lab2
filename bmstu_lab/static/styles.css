@@ -1,0 +1,17 @@
+body {
+  font-family: Impact; /* Семейство шрифтов */
+  font-size: 30pt; /* Размер основного шрифта в пунктах  */
+  background-color: #0A32F3; /* Цвет фона веб-страницы */
+  color: #FFFFFF; /* Цвет основного текста */
+}
+li {
+  font-family: Trattatello;
+  font-size:40pt;
+  color: #FFFFFF;
+}
+a:visited {
+  color: #EA70E2;
+}
+span{
+  color: #000000;
+}
