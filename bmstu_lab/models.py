@@ -27,7 +27,7 @@ class Subscriptions(models.Model):
     id_student = models.ForeignKey(Students, models.DO_NOTHING, db_column='id_student')
     num_classes = models.IntegerField(blank=True, null=True)
     date_of_purchase = models.DateField(blank=True, null=True)
-    next_lesson = models.CharField(max_length=15, blank=True, null=True)
+    status = models.CharField(max_length=15, blank=True, null=True)
 
     class Meta:
         managed = False
