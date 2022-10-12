@@ -4,8 +4,8 @@
 
 {% block content %}
 <ul>
-    {% for order in data.orders %}
-         <li><a href="{% url 'order_url' order.id %}">{{ order.title }} </a> <span> {{ order.time }} </span> <span> {{ order.sch }} </span> </li>
+    {% for group in data.groups %}
+        {%include 'qw.html' with element=group%}
     {% empty %}
         <li>Список пуст</li>
     {% endfor %}

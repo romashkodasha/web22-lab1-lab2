@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Направление {{ data.id }}{% endblock %}
+
+{% block content %}
+    <div>Преподаватель направления</div>
+    <img src="{{ data.trainer.photo }}" width="400">
+    <p><span> {{ data.trainer.name }} </span> <span> {{ data.trainer.info }} </span></p>
+    <ul>
+        {% for timetable in data.timetable %}
+        <li > <p>{{ timetable.day }}: {{ timetable.time }}</p> </li>
+    {% empty %}
+        <li>Список пуст</li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
